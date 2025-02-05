@@ -99,11 +99,11 @@ const Game = () => {
         placeholder="Enter your guess"
       />
       
-      <button onClick={handleGuess} disabled={remainingAttempts === 0 || gameStatus !== 'playing'}>
+      <button onClick={handleGuess} disabled={remainingAttempts === 0 || gameStatus !== 'playing'} className='submit-btn'>
         Submit Guess
       </button>
       
-      <button onClick={handleNewGame}>New Game</button>
+      <button onClick={handleNewGame} className='new-btn'>New Game</button>
 
       <p>{gameStatus === 'won' ? 'You Win!' : gameStatus === 'lost' ? 'You Lose!' : `Remaining Attempts: ${remainingAttempts}`}</p>
     </div>
