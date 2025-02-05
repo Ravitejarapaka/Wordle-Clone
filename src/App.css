@@ -1,0 +1,99 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+input {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 200px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+button:disabled {
+  background-color: gray;
+}
+
+.guess-grid {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.guess-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.letter-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  border: 2px solid #ccc;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.green {
+  background-color: #4caf50;
+  color: white;
+}
+
+.yellow {
+  background-color: #ffeb3b;
+  color: black;
+}
+
+.gray {
+  background-color: #ccc;
+  color: black;
+}
