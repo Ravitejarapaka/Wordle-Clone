@@ -98,12 +98,14 @@ const Game = () => {
         disabled={gameStatus !== 'playing'}
         placeholder="Enter your guess"
       />
+
+      <div>
+        <button onClick={handleGuess} disabled={remainingAttempts === 0 || gameStatus !== 'playing'} className='submit-btn'>
+            Submit Guess
+        </button>
       
-      <button onClick={handleGuess} disabled={remainingAttempts === 0 || gameStatus !== 'playing'} className='submit-btn'>
-        Submit Guess
-      </button>
-      
-      <button onClick={handleNewGame} className='new-btn'>New Game</button>
+        <button onClick={handleNewGame} className='new-btn'>New Game</button>
+      </div>
 
       <p>{gameStatus === 'won' ? 'You Win!' : gameStatus === 'lost' ? 'You Lose!' : `Remaining Attempts: ${remainingAttempts}`}</p>
     </div>
